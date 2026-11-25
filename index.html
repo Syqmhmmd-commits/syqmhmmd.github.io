@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Syqmhmmd // Low-Level System Engineer</title>
+  <meta name="description" content="Low-level system optimization, kernel debugging, compiler fixes, and open-source tools for Android devices.">
+  <meta name="theme-color" content="#0a0a0a">
+  
+  <!-- Open Graph / SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Syqmhmmd // Low-Level System Engineer">
+  <meta property="og:description" content="I fix what AI cannot touch. Kernel optimization & compiler debugging.">
+  <meta property="og:url" content="https://github.com/Syqmhmmd-commits">
+  <link rel="canonical" href="https://github.com/Syqmhmmd-commits">
+  
+  <!-- Favicon (Simple SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23ffb000'>_</text></svg>">
+
+  <!-- Font Monospace Kaku -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- Top Bar (Raw Status) -->
+  <header class="sys-header">
+    <div class="sys-status">
+      <span class="blink" aria-hidden="true">_</span> SYS_STATUS: ONLINE
+    </div>
+    <nav aria-label="Primary">
+      <a href="#kernel">[01. KERNEL]</a>
+      <a href="#logs">[02. LOGS]</a>
+      <a href="#about">[03. ABOUT]</a>
+      <a href="#contact">[04. CONTACT]</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO / BOOT LOG -->
+    <section id="hero" class="terminal-block">
+      <div class="log-line"><span class="time">[ 0.000000]</span> Booting Syqmhmmd kernel...</div>
+      <div class="log-line"><span class="time">[ 0.000120]</span> CPU: MediaTek Helio G95 (MT6785) detected.</div>
+      <div class="log-line"><span class="time">[ 0.000450]</span> Memory: 6GB available.</div>
+      <div class="log-line"><span class="time">[ 0.001020]</span> Initializing <span class="highlight">Low-Level System Engineer</span>...</div>
+      <div class="log-line"><span class="time">[ 0.002100]</span> Status: <span class="success">System Ready.</span></div>
+      
+      <h1 class="main-title">
+        I fix what AI cannot touch.<br>
+        <span class="muted-text">// Low-Level Debugging & Kernel Optimization</span>
+      </h1>
+      <p class="hero-desc">Specializing in custom Linux kernel builds, compiler-level bug fixing, and performance tuning for Android devices (specifically the Redmi Note 10S / MT6785 platform).</p>
+      
+      <div class="cmd-line">
+        <span class="prompt">root@rosemary:~#</span> <span id="typed-cmd"></span><span class="cursor" aria-hidden="true">_</span>
+      </div>
+    </section>
+
+    <!-- KERNEL PROJECTS (AUTO-FETCHED) -->
+    <section id="kernel" class="section-block">
+      <h2 class="section-title">01. KERNEL_BUILDS & SOURCES</h2>
+      <p class="section-desc">Auto-synced from GitHub API. Showing latest repositories.</p>
+      
+      <div class="project-list" id="github-repos">
+        <div class="log-line"><span class="time">[...]</span> Fetching repositories...</div>
+      </div>
+    </section>
+
+    <!-- DEBUG LOGS (THE REAL FLEX) -->
+    <section id="logs" class="section-block">
+      <h2 class="section-title">02. DEBUGGING_DIARIES</h2>
+      <p class="section-desc">When the compiler lies, I disassemble the binary.</p>
+      
+      <div class="code-box">
+        <div class="code-header">
+          <span>cat fix_probe_bq2597x_rosemary.txt</span>
+        </div>
+        <div class="code-content">
+          <p><strong>ROOT CAUSE:</strong> Clang/LLVM (-O2) Dead Code Elimination. The <code>bq2597x_charger_probe()</code> function was stripped to a single <code>ret</code> instruction. The compiler detected Undefined Behavior (float types in kernel space breaking the FPU/NEON state).</p>
+          <p><strong>SOLUTION:</strong> Replaced float arrays with integer fixed-point math (<code>div_u64</code>), added <code>__attribute__((optnone))</code> to the probe function, and forced <code>-O1 -fno-strict-aliasing</code> in the Makefile.</p>
+          <p><strong>RESULT:</strong> Probe successful. Charging current increased from hundreds of mA to <span class="success">~4758 mA</span>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-block">
+      <h2 class="section-title">03. ABOUT_ME</h2>
+      <div class="about-content">
+        <p>I am an Information Systems student with a deep passion for low-level systems. While most developers focus on web or app UI, I prefer digging into the Linux kernel, AOSP device trees, and hardware-level optimization.</p>
+        <p>I am currently open for <strong>low-level consulting</strong>, <strong>kernel debugging</strong>, or <strong>remote engineering roles</strong> related to embedded systems and Android platform development.</p>
+        <div class="raw-list" style="margin-top: 20px;">
+          <li>
+            <a href="https://github.com/Syqmhmmd-commits/snatch-downloader-cli" target="_blank" rel="noopener noreferrer">
+              <span class="list-title">snatch-downloader-cli ↗</span>
+              <span class="list-desc">Video downloader CLI (1000+ sites) powered by yt-dlp. Written in Python.</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Syqmhmmd-commits" target="_blank" rel="noopener noreferrer">
+              <span class="list-title">GitHub Actions Workflows ↗</span>
+              <span class="list-desc">Automated CI/CD pipelines for compiling custom Android kernels.</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact">
+    <div class="footer-content">
+      <h2>INITIATE_CONNECTION</h2>
+      <p>Available for low-level consulting, kernel debugging, or just talking about hardware.</p>
+      <div class="contact-links">
+        <a href="https://github.com/Syqmhmmd-commits" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <!-- Telegram Link -->
+        <a href="https://t.me/youthfxx" target="_blank" rel="noopener noreferrer">Telegram ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Syqmhmmd. Hand-written HTML/CSS/JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
