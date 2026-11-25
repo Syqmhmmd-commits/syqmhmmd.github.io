@@ -4,11 +4,11 @@
 
 **Personal portfolio website — Syauqii Dzakiir Muhammad**
 
-[![Live](https://img.shields.io/badge/live-syqmhmmd--commits.github.io-brightgreen)](https://syqmhmmd-commits.github.io/Portfolio/)
-[![GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-blue)](https://pages.github.com/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Live](https://img.shields.io/badge/live-syqmhmmd--commits.github.io-ffb000?style=flat-square)](https://syqmhmmd-commits.github.io/syqmhmmd.github.io/)
+[![GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-blue?style=flat-square)](https://pages.github.com/)
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 
-**Live Demo →** [syqmhmmd-commits.github.io/Portfolio](https://syqmhmmd-commits.github.io/Portfolio/)
+**Live Demo →** [syqmhmmd-commits.github.io/syqmhmmd.github.io](https://syqmhmmd-commits.github.io/syqmhmmd.github.io/)
 
 </div>
 
